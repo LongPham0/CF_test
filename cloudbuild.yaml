@@ -4,8 +4,8 @@ steps:
     args:
       - -c
       - |
-        git clone https://github.com/LongPham0/CF_test.git --no-checkout
-        cp -r CF_test/.git .
+        git clone --branch $BRANCH_NAME https://github.com/preaestate/prm_build_cloud_functions_test.git /tmp/repo ;
+        cp -r /tmp/repo/.git .
         git diff --name-only --diff-filter=AMDR @~..@ | grep "/" | cut -d"/" -f1 | uniq > /workspace/diff
 
   - name: 'gcr.io/cloud-builders/gcloud'
