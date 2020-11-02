@@ -18,4 +18,4 @@ def test(event, context):
         else:
             raise Exception('Error in data in from coordinator.')
     except Exception as e:
-        print("Error while running main function: +++++ ", e, " +++++")
+        print("Error while running main function: +++++ ", e, " ++++++")
