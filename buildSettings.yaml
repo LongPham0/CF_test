@@ -1,0 +1,7 @@
+settings:
+  entryPointFN: prm_test
+  entryPointFT: prm_coordinator
+  entryPointExecute: test
+  entryPointMemory: 2GB
+  entryPointRuntime: python37
+  entryPointTimeout: 540s
